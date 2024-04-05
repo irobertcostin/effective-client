@@ -36,7 +36,7 @@ export default function Description2({ description, whatwedo, howitworks, contac
 
 
     return (
-        <div ref={description} className="relative isolate overflow-hidden bg-white pt-12 ">
+        <div ref={description} className="relative isolate overflow-hidden bg-white pt-12 z-30">
 
             <div
                 className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

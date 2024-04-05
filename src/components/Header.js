@@ -16,7 +16,7 @@ export default function Header({ description, home }) {
 
 
     return (
-        <div ref={home} className="w-full homeimage  h-[80vh]  2xl:h-[95vh] ">
+        <div ref={home} className="w-full homeimage  h-[80vh]  2xl:h-[95vh] overflow-hidden relative z-30">
             <div className="flex flex-col justify-start    relative gap-32 items-center h-[80vh] 2xl:h-[95vh] py-10 w-full bg-black bg-opacity-30 2xl:gap-80">
 
                 <div className="w-40 h-40 rounded-full md:w-80 md:h-80 animate-spin   absolute -top-12 -right-12 bg-gradient-to-r from-fuchsia-600 to-pink-600">
@@ -29,7 +29,7 @@ export default function Header({ description, home }) {
 
 
 
-                <div className="w-full  px-5 text-center flex flex-col justify-start h-full items-center gap-5">
+                <div className="w-full   px-5 text-center flex flex-col justify-center xl:justify-start h-full items-center gap-5">
                     <div className="text-3xl text-white font-bold xl:text-5xl  h-24 md:h-16 ">
 
                         <TypeAnimation

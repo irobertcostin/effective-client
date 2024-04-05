@@ -1,8 +1,12 @@
 import { TypeAnimation } from 'react-type-animation'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
-import ColumnGroup from 'antd/es/table/ColumnGroup'
+import Data from '../services/Api'
+import { Modal, ConfigProvider } from 'antd';
+import confirmimage from "../images/confirm.png"
+import confirmimage2 from "../images/confirm2.png"
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -14,10 +18,69 @@ function classNames(...classes) {
 export default function Contact({ contact }) {
 
 
+    const service = new Data();
 
 
+
+
+    // const 
     const [agreed, setAgreed] = useState(false)
+    const [modal2Open, setModal2Open] = useState(false);
+    const [name, setName] = useState()
 
+    const [data, setData] = useState({
+        first_name: '',
+        last_name: '',
+        company: '',
+        email: '',
+        phone: '',
+        message: '',
+        status: "Must Contact",
+        agreed: agreed,
+    });
+
+    const { ...allData } = data;
+
+    const canSubmit = [...Object.values(allData)].every(Boolean);
+
+
+
+    function resetForm() {
+        document.getElementById("first-name").value = "";
+        document.getElementById("last-name").value = "";
+        document.getElementById("company").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone-number").value = "";
+        document.getElementById("message").value = "";
+        setAgreed(false)
+        setData({
+            first_name: "",
+            last_name: "",
+            company: "",
+            email: "",
+            phone: "",
+            message: "",
+            agreed: false
+        });
+    }
+
+
+
+    const newClient = async (item) => {
+
+        if (canSubmit) {
+
+            let data = await service.createClient(item);
+
+            if (data) {
+                resetForm();
+                setName(data.first_name)
+                setModal2Open(true)
+
+            }
+        }
+
+    }
 
 
 
@@ -27,25 +90,12 @@ export default function Contact({ contact }) {
     }
 
 
-    const [data, setData] = useState({
-        firstName: '',
-        lastName: '',
-        company: '',
-        email: '',
-        phoneNumber: '',
-        message: '',
-        agreed: agreed,
-    });
-
-
     const handleRegistration = (e) => {
         e.preventDefault();
+        newClient(data)
 
     };
 
-    const { ...allData } = data;
-
-    const canSubmit = [...Object.values(allData)].every(Boolean);
 
 
     const handleWhatsAppButtonClick = () => {
@@ -154,7 +204,7 @@ export default function Contact({ contact }) {
 
                                             setData({
                                                 ...data,
-                                                firstName: e.target.value
+                                                first_name: e.target.value
                                             });
                                         }}
                                         className=" block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -175,7 +225,7 @@ export default function Contact({ contact }) {
 
                                             setData({
                                                 ...data,
-                                                lastName: e.target.value
+                                                last_name: e.target.value
                                             });
                                         }}
                                         autoComplete="family-name"
@@ -250,14 +300,14 @@ export default function Contact({ contact }) {
                                         />
                                     </div>
                                     <input
-                                        type="tel"
+                                        type="number"
                                         name="phone-number"
                                         id="phone-number"
                                         autoComplete="tel"
                                         onChange={(e) => {
                                             setData({
                                                 ...data,
-                                                phoneNumber: e.target.value
+                                                phone: e.target.value
 
                                             });
                                         }}
@@ -288,7 +338,12 @@ export default function Contact({ contact }) {
                             <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
                                 <div className="flex h-6 items-center">
                                     <Switch
+                                        id='switch'
+                                        defaultChecked={false}
+                                        color='pink'
+                                        label="Confirm"
                                         checked={agreed}
+                                        // unchecked={!agreed}
                                         onChange={
                                             (e) => {
                                                 handleAggreeChange()
@@ -296,6 +351,7 @@ export default function Contact({ contact }) {
                                                     ...data,
                                                     agreed: !agreed
                                                 });
+
                                             }}
                                         className={classNames(
                                             agreed ? 'bg-indigo-600' : 'bg-gray-200',
@@ -335,6 +391,65 @@ export default function Contact({ contact }) {
                 </div>
 
             </div>
+
+
+
+
+
+
+            <ConfigProvider
+                theme={{
+                    token: {
+                        colorBgBase: "white",
+                        colorText: "indigo",
+                        colorIcon: "indigo",
+                        colorIconHover: "red",
+                        padding: 0,
+                        paddingLG: 0,
+                        borderRadius: 4,
+
+                    },
+                }}
+            >
+                <Modal
+                    okButtonProps={{ style: { display: "none" } }}
+                    cancelButtonProps={{ style: { display: "none" } }}
+                    centered
+                    closable={false}
+                    open={modal2Open}
+                    onOk={() => setModal2Open(false)}
+                    onCancel={() => setModal2Open(false)}
+
+                >
+                    <div className=' overflow-hidden  h-[40vh] flex flex-col justify-between fredoka-font'>
+
+                        <div className='relative w-full '>
+                            <img className='w-40 absolute -top-10 -left-16' alt='conformation-image2' src={confirmimage2}></img>
+                        </div>
+
+
+                        <div className=' h-full flex flex-col justify-between items-center z-50 py-6 bg-slate-800 bg-opacity-0'>
+
+                            <div className=' w-full h-full flex justify-end items-start px-2 pl-24   sm:items-center sm:pl-6 sm:pr-60'>
+                                <p className='text-end sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
+
+                            </div>
+                            <div className='w-full px-4 sm:px-8'>
+                                <button onClick={() => { setModal2Open(false) }} className='bg-slate-900  hover:bg-slate-600  block w-full rounded-full text-white max-w-[200px] px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm'>
+                                    Patiently waiting
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div className='relative w-full '>
+
+                            <img className='w-80 absolute -top-60 md:-top-80 -right-4' alt='conformation-image' src={confirmimage}></img>
+                        </div>
+
+                    </div>
+                </Modal>
+            </ConfigProvider>
 
 
 

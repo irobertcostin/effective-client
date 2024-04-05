@@ -17,7 +17,7 @@ export default function HowItWorks({ howitworks }) {
 
 
     return (
-        <div ref={howitworks} className="w-full relative bg-black border border-black flex flex-col justify-between py-16 px-4">
+        <div ref={howitworks} className="w-full relative bg-black  flex flex-col justify-between py-16 px-4">
 
             <div
                 className="absolute inset-x-0  transform-gpu overflow-hidden blur-3xl sm:top-[-20rem] z-20"

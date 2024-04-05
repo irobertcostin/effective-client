@@ -18,10 +18,10 @@ export default function Offer({ whatwedo }) {
 
 
     return (
-        <div ref={whatwedo} className="w-full relative  flex flex-col justify-between py-10 px-4 ">
+        <div ref={whatwedo} className="w-full relative   flex flex-col justify-between py-10 px-4 bg-white">
 
             <div
-                className="absolute inset-x-0  transform-gpu overflow-hidden blur-3xl sm:top-[-20rem] z-20"
+                className="absolute inset-x-0  transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]  "
                 aria-hidden="true"
             >
                 <div
@@ -35,7 +35,7 @@ export default function Offer({ whatwedo }) {
 
 
 
-            <div className="w-full z-50">
+            <div className="w-full z-50 ">
 
 
                 <div className="w-full flex flex-col justify-center  items-center gap-5">
@@ -88,7 +88,7 @@ export default function Offer({ whatwedo }) {
 
 
             <div className="w-full">
-                <video src={video} className="absolute bottom-20 -z-20 -right-32 xl:bottom-40" autoPlay={true} muted={true} loop={true} controls={false} playsInline={true}></video>
+                <video src={video} className="absolute bottom-20 z-10 -right-32 xl:bottom-40" autoPlay={true} muted={true} loop={true} controls={false} playsInline={true}></video>
             </div>
 
 

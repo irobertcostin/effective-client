@@ -22,7 +22,7 @@ export default function Home() {
 
 
     return (
-        <div className="w-full relative fredoka-font">
+        <div className="w-full px-0 relative fredoka-font bg-black">
 
             <Header description={description} home={home} />
             <Description2 description={description} whatwedo={whatwedo} howitworks={howitworks} contact={contact} />
