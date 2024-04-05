@@ -72,7 +72,7 @@ export default function Footer({ home }) {
 
 
                 <div className="flex justify-center xl:w-full xl:h-52 xl:max-w-[300px] xl:items-center  ">
-                    <img alt="logofooter" src={logo} className="w-80 xl:-ml-60"></img>
+                    <img alt="logofooter" src={logo} className="w-80 h-auto xl:-ml-60"></img>
                 </div>
 
 
@@ -84,16 +84,16 @@ export default function Footer({ home }) {
                     <div className="w-full flex px-5 gap-10 py-10 justify-center xl:justify-start xl:px-0">
 
                         <a href="https://www.facebook.com/effectivemediaro" target="_blank" rel="noreferrer" className="  text-neutral-600 dark:text-neutral-200">
-                            <img className="h-10 sm:h-12 sm:w-12" src={fbook} alt="facebook"></img>
+                            <img className="h-10 w-10 sm:h-12 sm:w-12" src={fbook} alt="facebook"></img>
                         </a>
 
 
 
                         <a href="https://www.instagram.com/effectivemedia.ro/" target="_blank" rel="noreferrer" className=" text-neutral-600 dark:text-neutral-200">
-                            <img className="h-10 sm:h-12 sm:w-12" src={insta} alt="instagram"></img>
+                            <img className="h-10 w-10 sm:h-12 sm:w-12" src={insta} alt="instagram"></img>
                         </a>
 
-                        <a href="https://linkedin.com/company/effective-media-ro/" target="_blank" rel="noreferrer" className=" text-neutral-600 dark:text-neutral-200">
+                        <a href="https://linkedin.com/company/effective-media-ro/" alt="linkedin.com" target="_blank" rel="noreferrer" className=" text-neutral-600 dark:text-neutral-200">
                             <svg alt="linkedin" enableBackground="new 0 0 56.693 56.693" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" className="h-10 sm:h-12 sm:w-12  text-white" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path fill="#ffffff" d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z" />
