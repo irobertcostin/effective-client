@@ -429,7 +429,7 @@ export default function Contact({ contact }) {
 
                         <div className=' h-full flex flex-col justify-between items-center z-50 py-6 bg-slate-800 bg-opacity-0'>
 
-                            <div className=' w-full h-full flex justify-center  items-start px-10 sm:px-2  pr-6  sm:justify-end sm:pt-0    sm:items-center sm:pl-6 sm:pr-60'>
+                            <div className=' w-full h-full flex justify-center  items-start pt-20 px-10 sm:px-2  pr-6  sm:justify-end sm:pt-0    sm:items-center sm:pl-6 sm:pr-60'>
                                 <p className='text-center sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
 
                             </div>
