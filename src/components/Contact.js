@@ -99,13 +99,12 @@ export default function Contact({ contact }) {
 
 
     const handleWhatsAppButtonClick = () => {
-        const phoneNumber = '0040759894218';
-        const message = 'Hello, I want to elevate my brand and I need your help. Please get back to me asap!';
+        const phoneNumber = '+40759894218';
+        const message = "Hello,%20I%20want%20to%20elevate%20my%20brand%20and%20need%20your%20help.%20Please%20get%20back%20to%20me%20asap!";
 
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(url);
     };
-
 
     return (
         <div ref={contact} className="isolate bg-white px-6 py-16 lg:px-8 relative z-40">
@@ -152,7 +151,7 @@ export default function Contact({ contact }) {
                             <button className=' bg-slate-800 py-2 px-10 hover:bg-opacity-50 text-white rounded-full text-xl'>
 
                                 <a
-                                    href="tel:PHONE_NUM"
+                                    href="tel:0040759894218"
                                     className='flex justify-center items-center'
                                 >
                                     <svg
@@ -434,7 +433,7 @@ export default function Contact({ contact }) {
                                 <p className='text-end sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
 
                             </div>
-                            <div className='w-full px-4 sm:px-8'>
+                            <div className='w-full px-4 sm:px-8 flex justify-center md:justify-start'>
                                 <button onClick={() => { setModal2Open(false) }} className='bg-slate-900  hover:bg-slate-600  block w-full rounded-full text-white max-w-[200px] px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm'>
                                     Patiently waiting
                                 </button>
@@ -442,7 +441,7 @@ export default function Contact({ contact }) {
                         </div>
 
 
-                        <div className='relative w-full '>
+                        <div className='relative w-full hidden md:flex'>
 
                             <img className='w-80 absolute -top-60 md:-top-80 -right-4' alt='conformation-image' src={confirmimage}></img>
                         </div>

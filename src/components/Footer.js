@@ -28,10 +28,10 @@ export default function Footer({ home }) {
     };
 
     const handleWhatsAppButtonClick = () => {
-        const phoneNumber = '0040759894218';
-        const message = 'Hello, I want to elevate my brand and I need your help. Please get back to me asap!';
+        const phoneNumber = '+40759894218';
+        const message = "Hello,%20I%20want%20to%20elevate%20my%20brand%20and%20need%20your%20help.%20Please%20get%20back%20to%20me%20asap!";
 
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(url);
     };
 
@@ -195,7 +195,7 @@ export default function Footer({ home }) {
             </div>
 
 
-            <div className="w-full border-t border-fuchsia-500 z-50 text-white flex justify-center items-center pt-2">
+            <div className="w-full border-t border-fuchsia-500 z-50 text-white flex justify-center items-center text-center pt-2">
                 <p>All rights reserved @2020 Effective Media Agency</p>
             </div>
 
