@@ -4,8 +4,8 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import Data from '../services/Api'
 import { Modal, ConfigProvider } from 'antd';
-import confirmimage from "../images/confirm.png"
-import confirmimage2 from "../images/confirm2.png"
+import confirmimage from "../images/confirm.webp"
+import confirmimage2 from "../images/confirm2.webp"
 
 
 function classNames(...classes) {
@@ -287,14 +287,14 @@ export default function Contact({ contact }) {
                                         <select
                                             id="country"
                                             name="country"
-                                            className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                                            className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-indigo-800 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                                         >
                                             <option>US</option>
                                             <option>CA</option>
                                             <option>EU</option>
                                         </select>
                                         <ChevronDownIcon
-                                            className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
+                                            className="pointer-events-none absolute right-3 top-0 h-full w-5 text-indigo-800"
                                             aria-hidden="true"
                                         />
                                     </div>
@@ -369,9 +369,9 @@ export default function Contact({ contact }) {
                                 </div>
                                 <Switch.Label className="text-sm leading-6 text-gray-600">
                                     By selecting this, you agree to our{' '}
-                                    <a href="#" className="font-semibold text-indigo-600">
+                                    <p className="font-semibold text-indigo-600">
                                         privacy&nbsp;policy
-                                    </a>
+                                    </p>
                                     .
                                 </Switch.Label>
                             </Switch.Group>
@@ -423,13 +423,13 @@ export default function Contact({ contact }) {
                     <div className=' overflow-hidden  h-[40vh] flex flex-col justify-between fredoka-font'>
 
                         <div className='relative w-full '>
-                            <img className='w-40 absolute -top-10 -left-16' alt='conformation-image2' src={confirmimage2}></img>
+                            <img className='w-40 absolute -top-10 -left-16' alt='conformation' src={confirmimage2}></img>
                         </div>
 
 
                         <div className=' h-full flex flex-col justify-between items-center z-50 py-6 bg-slate-800 bg-opacity-0'>
 
-                            <div className=' w-full h-full flex justify-end items-start px-2 pl-24   sm:items-center sm:pl-6 sm:pr-60'>
+                            <div className=' w-full h-full flex justify-end  items-start px-2 pl-12 pt-12 pr-2 sm:pt-0   sm:items-center sm:pl-6 sm:pr-60'>
                                 <p className='text-end sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
 
                             </div>
@@ -443,7 +443,7 @@ export default function Contact({ contact }) {
 
                         <div className='relative w-full hidden md:flex'>
 
-                            <img className='w-80 absolute -top-60 md:-top-80 -right-4' alt='conformation-image' src={confirmimage}></img>
+                            <img className='w-80 absolute -top-60 md:-top-80 -right-4' alt='conformation' src={confirmimage}></img>
                         </div>
 
                     </div>

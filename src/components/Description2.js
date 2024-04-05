@@ -1,8 +1,7 @@
 
 /* eslint-disable no-undef */
-import { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import fig1 from "../images/fig1.png"
+import fig1 from "../images/fig1.webp"
 
 
 

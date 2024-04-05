@@ -1,13 +1,13 @@
-import europeca from "../images/europeca.png"
-import proper from "../images/proper.png"
-import gym from "../images/technogym.png"
-import trans from "../images/trans.png"
-import voila from "../images/voilaballroom.png"
-import ponteggi from "../images/ponteggi.png"
-import marcelinos from "../images/Marcelinos.png"
-import harmony from "../images/harmony.png"
-import gek from "../images/gek.png"
-import dislessia from "../images/dislessia.png"
+import europeca from "../images/europeca.webp"
+import proper from "../images/proper.webp"
+import gym from "../images/technogym.webp"
+import trans from "../images/trans.webp"
+import voila from "../images/voilaballroom.webp"
+import ponteggi from "../images/ponteggi.webp"
+import marcelinos from "../images/Marcelinos.webp"
+import harmony from "../images/harmony.webp"
+import gek from "../images/gek.webp"
+import dislessia from "../images/dislessia.webp"
 import Marquee from "react-fast-marquee";
 
 
@@ -28,56 +28,56 @@ export default function Clients() {
                         speed={30}
                     >
                         <img
-                            className="  max-h-40 2xl:max-h-60  w-full object-cover lg:col-span-1"
+                            className=" max-h-32  w-full object-cover lg:col-span-1"
                             src={voila}
                             alt="voilaballroom"
-                            width={300}
-                            height={48}
+                            width="50px"
+                            height="50px"
                         />
                         <img
-                            className=" max-h-40 2xl:max-h-48 w-full object-cover lg:col-span-1"
+                            className="max-h-32  w-full object-cover lg:col-span-1"
                             src={proper}
                             alt="properpizza"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-40 2xl:max-h-60 w-full object-cover lg:col-span-1"
+                            className="max-h-32  w-full object-cover lg:col-span-1"
                             src={trans}
                             alt="transport"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-40 2xl:max-h-48 w-full object-cover sm: lg:col-span-1"
+                            className="max-h-32  w-full object-cover sm: lg:col-span-1"
                             src={gym}
                             alt="gym"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="   max-h-40 2xl:max-h-60 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32 w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={ponteggi}
                             alt="ponteggi"
-                            width={158}
-                            height={48}
+                            width={40}
+                            height={40}
                         />
                         <img
-                            className="  m max-h-40 2xl:max-h-48 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32   w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={europeca}
                             alt="europeca"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="  max-h-40 2xl:max-h-60 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32   w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={marcelinos}
                             alt="marcelinos"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="  max-h-40 2xl:max-h-80 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={gek}
                             alt="gek"
                             width={158}
@@ -85,14 +85,14 @@ export default function Clients() {
                         />
 
                         <img
-                            className="  max-h-40 xl:max-h-32 2xl:max-h-48 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={dislessia}
                             alt="dislessia"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="  ml-3 max-h-32 2xl:max-h-48 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
                             src={harmony}
                             alt="harmony"
                             width={158}

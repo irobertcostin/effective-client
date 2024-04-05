@@ -47,7 +47,7 @@ code {
 }
 
 .homeimage {
-  background-image: url("./images/adobemobile.jpeg");
+  background-image: url("./images/adobemobile.webp");
   background-position: center;
   background-size: cover
 }
@@ -94,7 +94,7 @@ code {
 
 @media screen and (min-width: 1200px) {
   .homeimage {
-    background-image: url("./images/adobe.jpeg");
+    background-image: url("./images/adobe.webp");
     background-position: center;
     background-size: cover
   }
