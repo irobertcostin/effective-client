@@ -28,56 +28,56 @@ export default function Clients() {
                         speed={30}
                     >
                         <img
-                            className=" h-20 w-20  "
+                            className=" h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40  "
                             src={voila}
                             alt="voilaballroom"
                             width="50px"
                             height="50px"
                         />
                         <img
-                            className="h-20 w-20   "
+                            className="h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={proper}
                             alt="properpizza"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="h-20  w-20  "
+                            className="h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40  "
                             src={trans}
                             alt="transport"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="h-20  w-20   "
+                            className="h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={gym}
                             alt="gym"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20 w-20   "
+                            className=" h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={ponteggi}
                             alt="ponteggi"
                             width={40}
                             height={40}
                         />
                         <img
-                            className=" h-20   w-20   "
+                            className=" h-20   w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={europeca}
                             alt="europeca"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20   w-20   "
+                            className=" h-20   w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={marcelinos}
                             alt="marcelinos"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20  w-20   "
+                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={gek}
                             alt="gek"
                             width={158}
@@ -85,14 +85,14 @@ export default function Clients() {
                         />
 
                         <img
-                            className=" h-20  w-20   "
+                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={dislessia}
                             alt="dislessia"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20  w-20   "
+                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={harmony}
                             alt="harmony"
                             width={158}
