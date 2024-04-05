@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation"
-import logo from "../images/logo.png"
-import { useRef } from "react"
+import logo from "../images/logo.webp"
 
 
 export default function Header({ description, home }) {

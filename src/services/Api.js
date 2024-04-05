@@ -37,7 +37,7 @@ export default class Data {
 
             let data = await this.api('/clients/new', "POST", client)
 
-            if (data.status == 201) {
+            if (data.status === 201) {
                 let resp = await data.json();
                 return resp
             } else {
