@@ -429,8 +429,8 @@ export default function Contact({ contact }) {
 
                         <div className=' h-full flex flex-col justify-between items-center z-50 py-6 bg-slate-800 bg-opacity-0'>
 
-                            <div className=' w-full h-full flex justify-end  items-start px-2 pl-12 pt-12 pr-2 sm:pt-0   sm:items-center sm:pl-6 sm:pr-60'>
-                                <p className='text-end sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
+                            <div className=' w-full h-full flex justify-center  items-start px-10 sm:px-2  pr-6  sm:justify-end sm:pt-0    sm:items-center sm:pl-6 sm:pr-60'>
+                                <p className='text-center sm:text-start text-2xl font-bold bg-gradient-to-r from-indigo-600 to-pink-400 bg-clip-text text-transparent'>Thank you for your interest, {name} ! Getting back to you ASAP!</p>
 
                             </div>
                             <div className='w-full px-4 sm:px-8 flex justify-center md:justify-start'>

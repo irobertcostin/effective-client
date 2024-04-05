@@ -28,56 +28,56 @@ export default function Clients() {
                         speed={30}
                     >
                         <img
-                            className=" max-h-32  w-full object-cover lg:col-span-1"
+                            className=" h-12 w-12  "
                             src={voila}
                             alt="voilaballroom"
                             width="50px"
                             height="50px"
                         />
                         <img
-                            className="max-h-32  w-full object-cover lg:col-span-1"
+                            className="h-12 w-12   "
                             src={proper}
                             alt="properpizza"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="max-h-32  w-full object-cover lg:col-span-1"
+                            className="h-12  w-12  "
                             src={trans}
                             alt="transport"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="max-h-32  w-full object-cover sm: lg:col-span-1"
+                            className="h-12  w-12   "
                             src={gym}
                             alt="gym"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-32 w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12 w-12   "
                             src={ponteggi}
                             alt="ponteggi"
                             width={40}
                             height={40}
                         />
                         <img
-                            className=" max-h-32   w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12   w-12   "
                             src={europeca}
                             alt="europeca"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-32   w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12   w-12   "
                             src={marcelinos}
                             alt="marcelinos"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12  w-12   "
                             src={gek}
                             alt="gek"
                             width={158}
@@ -85,14 +85,14 @@ export default function Clients() {
                         />
 
                         <img
-                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12  w-12   "
                             src={dislessia}
                             alt="dislessia"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" max-h-32  w-full object-cover sm:col-start-auto lg:col-span-1"
+                            className=" h-12  w-12   "
                             src={harmony}
                             alt="harmony"
                             width={158}

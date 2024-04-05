@@ -87,7 +87,7 @@ export default function Offer({ whatwedo }) {
 
 
 
-            <div className="w-full">
+            <div className="w-full hidden xl:block">
                 <video src={video} className="absolute bottom-20 z-10 -right-32 xl:bottom-40" autoPlay={true} muted={true} loop={true} controls={false} playsInline={true}></video>
             </div>
 
