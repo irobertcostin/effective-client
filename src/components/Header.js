@@ -23,7 +23,7 @@ export default function Header({ description, home }) {
                 </div>
 
                 <div className="flex flex-col justify-center items-center gap-5 ease-in duration-500 ">
-                    <img alt="logo" src={logo} className="w-60"></img>
+                    <img alt="logo" src={logo} className="w-60 h-auto"></img>
                 </div>
 
 
