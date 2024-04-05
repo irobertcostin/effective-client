@@ -13,7 +13,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Clients() {
     return (
-        <div className="bg-black py-8 md:py-16  border border-black">
+        <div className="bg-black py-8 md:py-16 ">
             <div className="mx-auto ">
                 <h2 className="text-center text-lg md:text-3xl font-semibold leading-8 text-white">
                     Trusted by

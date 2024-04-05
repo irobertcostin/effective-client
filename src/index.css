@@ -86,6 +86,10 @@ code {
   transform: translateX(100%);
 }
 
+.ant-modal-content {
+  padding: 0 !important;
+}
+
 
 
 @media screen and (min-width: 1200px) {
