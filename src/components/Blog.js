@@ -108,12 +108,12 @@ export default function Blog() {
                             <div className="relative mt-8 flex items-center gap-x-4">
                                 <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
                                 <div className="text-sm leading-6">
-                                    <p className="font-semibold text-gray-900">
+                                    <div className="font-semibold text-gray-900">
                                         <p >
                                             <span className="absolute inset-0" />
                                             {post.author.name}
                                         </p>
-                                    </p>
+                                    </div>
                                     <p className="text-gray-600">{post.author.role}</p>
                                 </div>
                             </div>

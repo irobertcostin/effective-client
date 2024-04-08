@@ -13,14 +13,14 @@ import Marquee from "react-fast-marquee";
 
 export default function Clients() {
     return (
-        <div className="bg-black py-8 md:py-16 ">
+        <div className="bg-black py-4  md:py-16  ">
             <div className="mx-auto ">
                 <h2 className="text-center text-lg md:text-3xl font-semibold leading-8 text-white">
                     Trusted by
                 </h2>
                 <div className="mx-auto ">
 
-                    <Marquee className=" mx-0 h-44 xl:h-60 overflow-hidden "
+                    <Marquee className=" mx-0 h-36 xl:h-60 overflow-hidden "
                         style={{ width: "200%", flex: true, justifyContent: "between" }}
                         pauseOnClick
                         pauseOnHover
@@ -28,56 +28,56 @@ export default function Clients() {
                         speed={30}
                     >
                         <img
-                            className=" h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40  "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40  "
                             src={voila}
                             alt="voilaballroom"
                             width="50px"
                             height="50px"
                         />
                         <img
-                            className="h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className="h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={proper}
                             alt="properpizza"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40  "
+                            className="h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40  "
                             src={trans}
                             alt="transport"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className="h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={gym}
                             alt="gym"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20 w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={ponteggi}
                             alt="ponteggi"
                             width={40}
                             height={40}
                         />
                         <img
-                            className=" h-20   w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={europeca}
                             alt="europeca"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20   w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={marcelinos}
                             alt="marcelinos"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-32 w-32 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={gek}
                             alt="gek"
                             width={158}
@@ -85,14 +85,14 @@ export default function Clients() {
                         />
 
                         <img
-                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={dislessia}
                             alt="dislessia"
                             width={158}
                             height={48}
                         />
                         <img
-                            className=" h-20  w-20 md:h-32 md:w-32 xl:h-40 xl:w-40   "
+                            className=" h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40   "
                             src={harmony}
                             alt="harmony"
                             width={158}

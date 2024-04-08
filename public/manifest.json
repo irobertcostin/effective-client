@@ -1,14 +1,14 @@
 {
     "name": "Effective Media Agency",
-    "short_name": "Effective Media Agency",
-    "start_url": "https://effectivemedia.ro",
+    "short_name": "EMA",
+    "start_url": ".",
     "display": "standalone",
-    "theme_color": "#ffffff",
+    "theme_color": "#000000",
     "background_color": "#ffffff",
     "icons": [
         {
-            "src": "/public/favicon.ico",
-            "sizes": "192x192",
+            "src": "favicon.ico",
+            "sizes": "192x192 64x64 32x32 24x24 16x16",
             "type": "image/webp",
             "purpose": "maskable"
         }

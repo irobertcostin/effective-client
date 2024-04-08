@@ -6,6 +6,8 @@ import Data from '../services/Api'
 import { Modal, ConfigProvider } from 'antd';
 import confirmimage from "../images/confirm.webp"
 import confirmimage2 from "../images/confirm2.webp"
+import { ClipLoader } from "react-spinners"
+
 
 
 function classNames(...classes) {
@@ -26,6 +28,7 @@ export default function Contact({ contact }) {
     // const 
     const [agreed, setAgreed] = useState(false)
     const [modal2Open, setModal2Open] = useState(false);
+    const [loading, setLoading] = useState(false)
     const [name, setName] = useState()
 
     const [data, setData] = useState({
@@ -67,7 +70,7 @@ export default function Contact({ contact }) {
 
 
     const newClient = async (item) => {
-
+        setLoading(true)
         if (canSubmit) {
 
             let data = await service.createClient(item);
@@ -75,6 +78,7 @@ export default function Contact({ contact }) {
             if (data) {
                 resetForm();
                 setName(data.first_name)
+                setLoading(false)
                 setModal2Open(true)
 
             }
@@ -380,9 +384,19 @@ export default function Contact({ contact }) {
                             <button
                                 type='submit'
                                 disabled={!canSubmit}
-                                className={`${!canSubmit ? "bg-slate-400" : "bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:bg-gradient-to-l hover:from-fuchsia-600 hover:to-yellow-500"} block w-full rounded-full text-white  px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm`}
+                                className={`${!canSubmit ? "bg-slate-400" : "bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:bg-gradient-to-l hover:from-fuchsia-600 hover:to-yellow-500"}  w-full rounded-full text-white  px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm flex justify-center items-center`}
                             >
-                                Submit
+                                {
+                                    loading ?
+
+                                        <div className='h-6 flex items-center'>
+                                            <ClipLoader className='' size={"25px"} color='white' />
+                                        </div>
+
+                                        :
+
+                                        <>Submit</>
+                                }
 
                             </button>
                         </div>
