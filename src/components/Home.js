@@ -31,7 +31,7 @@ export default function Home() {
             <Offer whatwedo={whatwedo} />
 
             <HowItWorks howitworks={howitworks} />
-            <Blog />
+            {/* <Blog /> */}
             <Contact contact={contact} />
             <Footer home={home} />
         </div>
